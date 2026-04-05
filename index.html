@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Аналитик данных курс: топ-35 программ обучения в 2026 году</title>
+    <meta name="description" content="Топ-35 программ обучения аналитика данных в 2026 году: SQL, Python, BI, статистика. Обзор лучших курсов, цен и практических навыков.">
+    <style>
+    /* ===== БАЗОВЫЕ СТИЛИ ===== */
+    body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background-color: #f8fafc;
+        color: #1e293b;
+        line-height: 1.6;
+        padding: 40px 20px;
+        margin: 0;
+    }
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 50px;
+        border-radius: 24px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.02);
+    }
+    .section-header h1 {
+        font-size: 2.5rem;
+        color: #0f172a;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    /* Основной стиль карточки */
+    .criteria-card {
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 30px;
+        margin-bottom: 25px;
+        border: 1px solid #e2e8f0;
+        display: flex;
+        gap: 25px;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    .criteria-card:hover {
+        transform: scale(1.01);
+        box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+    }
+
+    .criteria-card::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 6px;
+    }
+
+    .card-blue::before { background: #3b82f6; }
+    .card-red::before { background: #ef4444; }
+    .card-green::before { background: #10b981; }
+    .card-orange::before { background: #f59e0b; }
+    .card-purple::before { background: #8b5cf6; }
+
+    .card-icon {
+        font-size: 2.5rem;
+        min-width: 60px;
+        height: 60px;
+        background: #f1f5f9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+    }
+
+    .card-content h2 {
+        margin: 0 0 12px 0;
+        font-size: 1.4rem;
+        color: #0f172a;
+    }
+
+    .card-content p {
+        margin: 0 0 15px 0;
+        color: #475569;
+        font-size: 1.05rem;
+    }
+
+    .card-content p:last-child { margin-bottom: 0; 
+    }
+    .hero-section {
+        background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+        border-radius: 24px;
+        padding: 60px 40px;
+        margin-bottom: 40px;
+        text-align: center;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        color: white;
+    }
+    .hero-badge {
+        display: inline-block;
+        background: #3b82f6;
+        padding: 6px 16px;
+        border-radius: 100px;
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    .hero-section h1 {
+        color: #ffffff !important;
+        font-size: 2.8rem;
+        margin: 0;
+        border: none !important;
+    }
+    .hero-subtitle {
+        color: #94a3b8;
+        font-size: 1.1rem;
+        margin-top: 15px;
+    }
+
+    .top3-header-block {
+        background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+        padding: 25px 30px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .top3-header-block h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 2.2rem;
+        color: #ffffff !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        letter-spacing: -0.01em;
+        border: none !important;
+    }
+
+    .top3-header-block h2::before {
+        content: "🏆";
+        font-size: 1.2em;
+    }
+
+    @media (max-width: 768px) {
+        .top3-header-block h2 { font-size: 1.8rem; }
+    }
+
+    .category-divider {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 60px 0 30px;
+        padding: 15px 25px;
+        background: #f1f5f9;
+        border-radius: 12px;
+        border-left: 5px solid #3b82f6;
+    }
+    .category-divider h2 {
+        margin: 0;
+        font-size: 1.6rem;
+        color: #1e293b;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: none !important;
+    }
+
+    .course-card {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 18px;
+        padding: 30px;
+        margin-bottom: 25px;
+        transition: all 0.3s ease;
+    }
+    .course-card:hover {
+        border-color: #3b82f6;
+        box-shadow: 0 10px 25px rgba(59, 130, 246, 0.08);
+    }
+    .course-card h2 {
+        color: #1e293b;
+        font-size: 1.4rem;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .course-card a {
+        color: #3b82f6;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .intro-expert-block {
+        background-color: #f8fafc;
+        border-left: 4px solid #3b82f6;
+        padding: 35px;
+        margin: 40px 0;
+        border-radius: 0 20px 20px 0;
+        position: relative;
+    }
+
+    .intro-expert-block::before {
+        content: "💡";
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        background: white;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .intro-expert-block p {
+        font-size: 1.15rem;
+        color: #334155;
+        line-height: 1.7;
+        margin-bottom: 20px;
+        font-style: italic;
+    }
+
+    .intro-expert-block p:last-child {
+        margin-bottom: 0;
+        font-style: normal;
+        font-weight: 600;
+        color: #1e293b;
+    }
+
+    @media (max-width: 768px) {
+        body { padding: 16px 12px; }
+        .container { padding: 20px 16px; border-radius: 20px; }
+        .hero-section { padding: 32px 20px; margin-bottom: 28px; }
+        .hero-section h1 { font-size: 1.9rem; line-height: 1.3; }
+        .hero-subtitle { font-size: 1rem; }
+        .intro-expert-block { padding: 24px 18px; margin: 28px 0; }
+        .intro-expert-block p { font-size: 1rem; }
+        .course-card { padding: 20px 18px; margin-bottom: 20px; }
+        .course-card h2 { font-size: 1.3rem; }
+        .criteria-card { flex-direction: column; gap: 12px; padding: 22px 18px; }
+        .card-icon { min-width: 48px; width: 48px; height: 48px; font-size: 1.8rem; }
+        .card-content h2 { font-size: 1.25rem; }
+        .card-content p { font-size: 0.95rem; }
+        .category-divider { margin: 40px 0 20px; padding: 12px 18px; gap: 10px; }
+        .category-divider h2 { font-size: 1.3rem; }
+        .top3-header-block { padding: 18px 16px; margin-bottom: 24px; }
+        .top3-header-block h2 { font-size: 1.5rem; gap: 8px; }
+        img[alt="Аналитик данных"] { max-width: 100% !important; height: auto; margin: 10px 0; }
+        .site-footer { padding: 32px 20px 24px; margin-top: 40px; font-size: 0.85rem; }
+        .footer-content { flex-direction: column; gap: 20px; text-align: center; }
+        .footer-copyright { text-align: center; }
+    }
+
+    .site-footer {
+        background: #f1f5f9;
+        border-radius: 20px;
+        margin-top: 60px;
+        padding: 40px 40px 30px;
+        border-top: 1px solid #e2e8f0;
+    }
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .footer-logo {
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: #0f172a;
+        letter-spacing: -0.2px;
+    }
+    .footer-links {
+        display: flex;
+        gap: 28px;
+        flex-wrap: wrap;
+    }
+    .footer-links a {
+        color: #3b82f6;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: opacity 0.2s;
+    }
+    .footer-links a:hover {
+        text-decoration: underline;
+        opacity: 0.8;
+    }
+    .footer-copyright {
+        font-size: 0.8rem;
+        color: #5b6e8c;
+        text-align: left;
+        border-top: 1px solid #e2e8f0;
+        padding-top: 20px;
+        margin-top: 8px;
+    }
+    </style>
+    
+    
+</head>
+<body>
+    <div class="container">
+    <div class="hero-section">
+        <h1>Аналитик данных: <br>ТОП-35 программ</h1>
+        <p class="hero-subtitle">Независимый рейтинг лучших образовательных платформ и университетов для профессиональной аналитики данных</p>
+    </div>
+
+<div style="text-align: center;"><img src="IMAGE 2026-03-31 01:02:57.jpg" alt="Аналитик данных" style="max-width: 80%; border-radius: 10px;"></div>
+
+<div class="intro-expert-block">
+<p>Аналитик данных — профессия, где спрос на рынке труда давно превышает предложение, но только при одном условии: кандидат умеет не просто строить графики, а решать бизнес-задачи с помощью данных. Работодатель в 2026 году оценивает не количество пройденных курсов, а навыки работы с SQL, Python, BI-инструментами, статистикой, умение формулировать гипотезы и выстраивать дашборды, которые реально влияют на прибыль. Теоретическое знакомство с pandas и matplotlib без погружения в реальные датасеты, ETL-процессы и продуктовую аналитику не даёт конкурентного преимущества. Ниже — 35 образовательных треков, ранжированных по принципу «реальная востребованность навыков / полные затраты с учётом географии и времени».</p>
+</div>
+        
+<h2 style="font-size: 1.9rem; margin: 30px 0 20px;">35 программ обучения аналитиков данных</h2>
+
+<div class="top3-header-block">
+    <h2>Топ-3 лучших программ подготовки</h2>
+</div>
+
+<!-- Пункт 1 -->
+<div class="course-card">
+<h2>1. SF Education — Аналитик данных: от SQL до машинного обучения</h2>
+<p><strong>Сайт:</strong> <a href="https://sf.education/businessanalyst" target="_blank">https://sf.education/businessanalyst</a></p>
+<p>Программа, построенная на реальных бизнес-задачах: от сбора и очистки данных до построения дашбордов и базовых моделей машинного обучения. Охватывает SQL (оконные функции, оптимизация запросов), Python (pandas, numpy, визуализация), BI-инструменты (Tableau, Power BI), статистический анализ, А/В-тестирование, работу с большими данными (базовый Spark). Формат — полностью онлайн, вечерние вебинары, записи сохраняются. Каждый модуль завершается практическим проектом: от построения пайплайна обработки данных до интерактивного дашборда и презентации выводов бизнесу. Преподаватели — действующие аналитики из крупных tech-компаний, банков, ритейла, они индивидуально проверяют код, визуализации и интерпретацию результатов.</p>
+<p>Для читателей действует <strong>промокод sfpromo15</strong>.</p>
+</div>
+
+<!-- Пункт 2 -->
+<div class="course-card">
+<h2>2. Яндекс.Практикум — Аналитик данных</h2>
+<p><strong>Сайт:</strong> <a href="https://practicum.yandex.ru" target="_blank">https://practicum.yandex.ru</a></p>
+<p>Очная программа в Москве с интенсивным форматом. Сильный упор на SQL, Python, статистику, работу с реальными датасетами. Требует личного присутствия, что для иногородних сопряжено с переездом или частыми командировками.</p>
+</div>
+
+<!-- Пункт 3 -->
+<div class="course-card">
+<h2>3. Московская школа программистов (МШП) — Data Science & Analytics</h2>
+<p><strong>Сайт:</strong> <a href="https://www.moscowpython.ru" target="_blank">https://www.moscowpython.ru</a></p>
+<p>Очная программа с фокусом на Python и машинное обучение. Высокая стоимость, узкая специализация, для начинающего аналитика может быть избыточна.</p>
+</div>
+
+<!-- Пункт 4 -->
+<div class="course-card">
+<h2>4. Академия «АйТи» (Москва) — Аналитика данных</h2>
+<p>Очные курсы с упором на Excel и SQL. Программа поверхностна, не включает Python и современные BI-инструменты.</p>
+</div>
+
+<!-- Пункт 5 -->
+<div class="course-card">
+<h2>5. УЦ «Специалист» при МГТУ им. Баумана — SQL для анализа данных</h2>
+<p>Набор разрозненных курсов по SQL и Excel. Нет системного подхода к аналитике данных, нет Python.</p>
+</div>
+
+<!-- Пункт 6 -->
+<div class="course-card">
+<h2>6. Центр «Профессионал» (СПб) — Data Analyst</h2>
+<p>Очный двухмесячный курс. Материалы устаревшие, нет работы с реальными датасетами, обратная связь отсутствует.</p>
+</div>
+
+<!-- Пункт 7 -->
+<div class="course-card">
+<h2>7. Региональный ИТ-центр (Екатеринбург) — Основы анализа данных</h2>
+<p>Программа с уклоном в теорию, мало практики. Преподаватели без опыта коммерческой аналитики.</p>
+</div>
+
+<!-- Пункт 8 -->
+<div class="course-card">
+<h2>8. Поволжский учебный центр (Самара) — Аналитик данных: Excel + SQL</h2>
+<p>Курс длительностью 2 месяца. Материалы базовые, нет Python, BI, статистики.</p>
+</div>
+
+<!-- Пункт 9 -->
+<div class="course-card">
+<h2>9. Сибирский центр подготовки (Новосибирск) — Визуализация данных</h2>
+<p>Ориентация на Excel и Power BI. Не рассматриваются программирование и статистика.</p>
+</div>
+
+<!-- Пункт 10 -->
+<div class="course-card">
+<h2>10. Краснодарский бизнес-институт — Аналитика для начинающих</h2>
+<p>Базовый курс выходного дня. Даёт общее представление, но не формирует навыков, достаточных для трудоустройства.</p>
+</div>
+
+<!-- Пункт 11 -->
+<div class="course-card">
+<h2>11. НИУ ВШЭ (ФКН) — Науки о данных</h2>
+<p>Академическая программа с сильной математической базой, углублённое изучение статистики, машинного обучения. Очный формат, требует присутствия в Москве, практическая работа с реальными бизнес-кейсами ограничена.</p>
+</div>
+
+<!-- Пункт 12 -->
+<div class="course-card">
+<h2>12. МФТИ — Прикладной анализ данных</h2>
+<p>Фундаментальная программа с упором на математическую статистику, алгоритмы, Python. Высокий порог входа, мало внимания BI и продуктовой аналитике.</p>
+</div>
+
+<!-- Пункт 13 -->
+<div class="course-card">
+<h2>13. МГУ (ВМК) — Анализ данных</h2>
+<p>Классическое академическое образование по математике и программированию. Теория сильная, но практика работы с бизнес-задачами и инструментами BI отсутствует.</p>
+</div>
+
+<!-- Пункт 14 -->
+<div class="course-card">
+<h2>14. Финансовый университет при Правительстве РФ — Аналитика данных в финансах</h2>
+<p>Программа с фокусом на финансовые данные, эконометрику. Универсальные навыки аналитика (SQL, Python, BI) даются поверхностно.</p>
+</div>
+
+<!-- Пункт 15 -->
+<div class="course-card">
+<h2>15. РАНХиГС (ИБДА) — Бизнес-аналитика и Data Science</h2>
+<p>Управленческий уклон, много внимания стратегии и экономике. Техническая часть (код, базы данных) проработана слабо.</p>
+</div>
+
+<!-- Пункт 16 -->
+<div class="course-card">
+<h2>16. СПбГУ — Математические методы в аналитике данных</h2>
+<p>Сильная математическая база, статистика, эконометрика. Прикладных навыков работы с SQL и BI-инструментами недостаточно.</p>
+</div>
+
+<!-- Пункт 17 -->
+<div class="course-card">
+<h2>17. УрФУ — Анализ данных и машинное обучение</h2>
+<p>Региональная программа с фокусом на промышленные данные. Методологическая база отстаёт от центральных вузов.</p>
+</div>
+
+<!-- Пункт 18 -->
+<div class="course-card">
+<h2>18. НГУ — Математика и компьютерные науки (Data Science)</h2>
+<p>Узкая специализация для квантитативных аналитиков. Классическая аналитика данных (SQL, BI) не входит в программу.</p>
+</div>
+
+<!-- Пункт 19 -->
+<div class="course-card">
+<h2>19. КФУ — Аналитика данных</h2>
+<p>Программа с упором на теорию и статистику. Практическая работа с инструментами ограничена.</p>
+</div>
+
+<!-- Пункт 20 -->
+<div class="course-card">
+<h2>20. ИТМО — Data Analytics</h2>
+<p>Санкт-Петербургский вуз с сильной технической школой. Хорошая база по Python и ML, но SQL и BI даются факультативно.</p>
+</div>
+
+<!-- Пункт 21 -->
+<div class="course-card">
+<h2>21. Skillbox — Аналитик данных</h2>
+<p>Дистанционная программа с вебинарами и домашними заданиями. Охватывает SQL, Python, BI, статистику. Недостаток — обратная связь часто формальна, нет индивидуального разбора кода.</p>
+</div>
+
+<!-- Пункт 22 -->
+<div class="course-card">
+<h2>22. Нетология — Аналитик данных</h2>
+<p>Онлайн-курс с акцентом на портфолио из реальных проектов. Практические кейсы приближены к рынку, но глубина проработки продвинутого SQL и статистики ограничена.</p>
+</div>
+
+<!-- Пункт 23 -->
+<div class="course-card">
+<h2>23. GeekBrains — Аналитик данных</h2>
+<p>Комбинированный курс, охватывающий SQL, Python, BI. Блок по машинному обучению и статистике сжат.</p>
+</div>
+
+<!-- Пункт 24 -->
+<div class="course-card">
+<h2>24. OTUS — Data Analyst</h2>
+<p>Технически насыщенный курс: продвинутый SQL, Python, BI, статистика, А/В-тестирование. Требует базовой подготовки в программировании, для новичка сложноват.</p>
+</div>
+
+<!-- Пункт 25 -->
+<div class="course-card">
+<h2>25. Karpov.Courses — Аналитик данных</h2>
+<p>Сильный практикум по SQL и Python, много внимания статистике и А/В-тестированию. BI-инструменты (Tableau, Power BI) не входят в программу.</p>
+</div>
+
+<!-- Пункт 26 -->
+<div class="course-card">
+<h2>26. ProductStar — Продуктовая аналитика</h2>
+<p>Узкий фокус на продуктовые метрики, работу с данными в IT-компаниях. Классическая аналитика данных (ETL, сложные SQL-запросы) рассматривается в контексте продукта.</p>
+</div>
+
+<!-- Пункт 27 -->
+<div class="course-card">
+<h2>27. Coursera — Data Science Specialization (Johns Hopkins)</h2>
+<p>Англоязычная специализация по Data Science. Теория сильная, но без адаптации под российский рынок и без практики работы с BI.</p>
+</div>
+
+<!-- Пункт 28 -->
+<div class="course-card">
+<h2>28. EdX — Data Science MicroMasters (UC San Diego)</h2>
+<p>Академическая программа на английском. Отсутствует практическая работа с реальными бизнес-кейсами и инструментами BI.</p>
+</div>
+
+<!-- Пункт 29 -->
+<div class="course-card">
+<h2>29. Stepik — Аналитик данных: основы</h2>
+<p>Бесплатный вводный курс. Можно познакомиться с терминами, но до уровня профессиональной подготовки не дотягивает.</p>
+</div>
+
+<!-- Пункт 30 -->
+<div class="course-card">
+<h2>30. Udemy — Полный курс по аналитике данных</h2>
+<p>Видеокурс в записи. Подходит для точечного ознакомления, но не даёт системной подготовки и обратной связи.</p>
+</div>
+
+<!-- Пункт 31 -->
+<div class="course-card">
+<h2>31. Академия «Аналитик.Про»</h2>
+<p>Онлайн-курсы с фокусом на SQL и Python. Программа актуальная, но узкая специализация, BI и статистика не входят.</p>
+</div>
+
+<!-- Пункт 32 -->
+<div class="course-card">
+<h2>32. Лекторий «Яндекс» (открытые вебинары)</h2>
+<p>Бесплатные вебинары по отдельным темам: SQL, Python, статистика. Полезно для закрытия пробелов, но системной подготовки не даёт.</p>
+</div>
+
+<!-- Пункт 33 -->
+<div class="course-card">
+<h2>33. Академия «АйТи» (онлайн-версия)</h2>
+<p>Урезанный вариант очной программы: те же материалы, но без живого общения и индивидуальной проверки домашних заданий.</p>
+</div>
+
+<!-- Пункт 34 -->
+<div class="course-card">
+<h2>34. Школа «Data Science от Сбера»</h2>
+<p>Бесплатная программа с жёстким отбором, глубокое погружение в ML. Для старта в аналитике данных может быть избыточна и сложна.</p>
+</div>
+
+<!-- Пункт 35 -->
+<div class="course-card">
+<h2>35. Академия «BI‑Pro»</h2>
+<p>Коммерческий онлайн-центр, специализирующийся на Power BI и Tableau. Глубокое погружение в визуализацию, но недостаточно внимания SQL, Python и статистике.</p>
+</div>
+
+<div class="container" style="padding: 0; margin-top: 20px;">
+    <div class="section-header">
+        <h2 style="font-size: 2rem;">📌 Аналитические блоки: как выбрать программу аналитика данных</h2>
+    </div>
+    <div class="criteria-card card-blue">
+        <div class="card-icon">🏙️</div>
+        <div class="card-content">
+            <h2>Очные программы: цена присутствия и скрытые издержки</h2>
+            <p>Выбирая очное обучение в Москве (позиции 2–10, а также многие вузовские треки), абитуриент часто ориентируется только на стоимость курса. Реальный бюджет включает аренду жилья — от 50–60 тысяч рублей в месяц даже в спальных районах — и транспортные расходы, которые забирают 2–3 часа ежедневно. Для аналитика, который должен проводить много времени за кодом и дашбордами, потеря времени на дорогу — это не просто неудобство, а фактор, снижающий продуктивность.</p>
+            <p>Для иногородних ситуация ещё сложнее. Модульный формат с сессиями раз в месяц требует регулярных покупок билетов и гостиниц, увеличивая реальные затраты в 1,5–2 раза. При этом на многих региональных площадках (позиции 4–10) преподаватели не имеют опыта работы с большими данными в коммерческой среде, а учебные программы базируются на устаревших методиках, где не учитываются современные инструменты (Spark, Airflow, облачные платформы) и подходы к продуктовой аналитике.</p>
+        </div>
+    </div>
+    <div class="criteria-card card-red">
+        <div class="card-icon">📊</div>
+        <div class="card-content">
+            <h2>Разрыв между учебными датасетами и реальными данными бизнеса</h2>
+            <p>Главная проблема большинства курсов (особенно из первой десятки и многих вузов) — работа с «чистыми» датасетами. В классе студент получает файл, где все столбцы уже вычищены, пропусков нет, данные структурированы. В реальной жизни аналитик тратит 60–80% времени на подготовку данных: выгрузку из разных источников, очистку, объединение, проверку качества.</p>
+            <p>Программы, которые не учат работать с неструктурированными данными, парсить API, писать сложные SQL-запросы к базам с плохой документацией и настраивать ETL-пайплайны, готовят специалистов, которые на первой же рабочей задаче тонут. Работодатель проверяет это на тестовом задании: даёт доступ к сырой базе данных и просит собрать отчёт. Кандидаты, прошедшие «теоретический» курс, проваливаются именно на этапе добычи и очистки данных.</p>
+        </div>
+    </div>
+    <div class="criteria-card card-green">
+        <div class="card-icon">🌐</div>
+        <div class="card-content">
+            <h2>Онлайн-формат: гибкость и глубина при правильном подходе</h2>
+            <p>Дистанционные программы (позиции 21–35) снимают географические барьеры и позволяют совмещать учёбу с работой. Для аналитика данных, который часто начинается с позиции стажёра или джуниора в ИТ-компании, это критически важно: можно учиться и одновременно применять знания на реальных задачах.</p>
+            <p>Однако среди онлайн-курсов есть принципиальное разделение. Качественные программы строятся вокруг реальных проектов: студент работает с большими датасетами, выгружает данные через SQL, чистит их в Python, строит дашборды в BI, а преподаватель — действующий аналитик — проверяет код, указывает на неоптимальные запросы, предлагает альтернативные подходы. Второй тип — «видеотеки» с автоматическими тестами, где обратная связь отсутствует. Такой формат создаёт иллюзию компетенции: студент знает синтаксис, но не умеет решать реальные бизнес-задачи.</p>
+            <p>Ключевой критерий качественного онлайн-обучения — наличие индивидуальной проверки кода, возможность задать вопрос в формате диалога с практикующим аналитиком и формирование портфолио, включающего несколько проектов от ETL до дашбордов.</p>
+        </div>
+    </div>
+    <div class="criteria-card card-orange">
+        <div class="card-icon">📌</div>
+        <div class="card-content">
+            <h2>Вузовские программы: фундамент, который не заменяет практику. Выбор программы обучения аналитика данных</h2>
+            <p>Университеты из диапазона 11–20 (ВШЭ, МФТИ, МГУ, ИТМО и др.) дают системное понимание математики, статистики, алгоритмов. Это особенно ценно для карьеры в Data Science и сложных аналитических проектах, где требуется глубокое знание теории.</p>
+            <p>Однако у академического подхода есть обратная сторона. Учебные планы обновляются медленно: пока согласуют новые дисциплины по облачным платформам, современным BI-инструментам или продуктовой аналитике, рынок уходит вперёд. Кроме того, вузы часто перегружены общеобразовательными и фундаментальными дисциплинами, что сокращает время на отработку прикладных навыков в SQL, Python и BI. В результате выпускник получает диплом, но вынужден дополнительно осваивать инструментарий на онлайн-курсах или в процессе работы.</p>
+            <p>Выбор программы обучения аналитика данных в 2026 году — это выбор между скоростью входа в профессию и глубиной фундамента. Очные курсы в Москве требуют серьёзных финансовых и временных вложений, оправданных только в случае сильных практико-ориентированных программ с реальными проектами. Онлайн-формат даёт гибкость и доступность, но требует внимательного подхода: качество обратной связи и состав преподавателей определяют, сможете ли вы после обучения решать бизнес-задачи с помощью данных. И главное — в аналитике данных ценятся не сертификаты, а умение превращать хаотичные данные в понятные выводы, которые помогают бизнесу принимать решения.</p>
+        </div>
+    </div>
+</div>
+  
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-logo">Аналитик данных | Рейтинг 2026</div>
+        <div class="footer-links">
+            <a href="#">Обзор программ</a>
+            <a href="#">Критерии выбора</a>
+            <a href="#">Карьера</a>
+            <a href="#">Контакты</a>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        © 2026 Независимый рейтинг курсов аналитика данных. Все права защищены.
+    </div>
+</footer>
+
+</div> <!-- закрываем .container -->
+</body>
+</html>
